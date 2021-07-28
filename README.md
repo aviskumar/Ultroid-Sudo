@@ -96,4 +96,5 @@ Ultroid is licensed under [GNU Affero General Public License](https://www.gnu.or
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon.](https://github.com/LonamiWebs/Telethon)
 * [Dan](https://github.com/delivrance) for [Pyrogram.](https://github.com/pyrogram/pyrogram)
 * [Pytgcalls](https://github.com/pytgcalls) for [PyTgCalls.](https://github.com/pytgcalls/pytgcalls)
+* Full Credits To Team Ultroid for making Ultroid.
 
