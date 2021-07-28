@@ -7,18 +7,7 @@
 
 <b>A stable pluggable Telegram userbot + vc music bot, based on Telethon.</b>   
 
-[![Stars](https://img.shields.io/github/stars/TeamUltroid/Ultroid?style=flat-square&color=yellow)](https://github.com/TeamUltroid/Ultroid/stargazers)
-[![Forks](https://img.shields.io/github/forks/TeamUltroid/Ultroid?style=flat-square&color=orange)](https://github.com/TeamUltroid/Ultroid/fork)
-[![Size](https://img.shields.io/github/repo-size/TeamUltroid/Ultroid?style=flat-square&color=green)](https://github.com/TeamUltroid/Ultroid/)   
-[![Python](https://img.shields.io/badge/Python-v3.9-blue)](https://www.python.org/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/TeamUltroid/Ultroid/graphs/commit-activity)
-[![Docker Pulls](https://img.shields.io/docker/pulls/programmingerror/ultroid?style=flat-square)](https://img.shields.io/docker/pulls/programmingerror/ultroid?style=flat-square)
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/TeamUltroid/Ultroid)   
-[![Contributors](https://img.shields.io/github/contributors/TeamUltroid/Ultroid?style=flat-square&color=green)](https://github.com/TeamUltroid/Ultroid/graphs/contributors)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/TeamUltroid/Ultroid/blob/main/LICENSE)
-[![Sparkline](https://stars.medv.io/Teamultroid/Ultroid.svg)](https://stars.medv.io/TeamUltroid/Ultroid)
-
+NOTE: This is a fork of Ultroid specially for Public Sudo Bot and not officially supported by [TeamUltroid](https://t.me/TeamUltroid)
 ----
 
 # Deploy
@@ -29,7 +18,7 @@
 [![Document](https://img.shields.io/badge/Documentation-Ultroid-blue)](http://ultroid.tech/)
 
 # Tutorial 
-- Full Tutorial - [![Full Tutorial](https://img.shields.io/badge/Watch%20Now-blue)](https://www.youtube.com/watch?v=9wF7k9qA0Q4)
+- Original Full Tutorial (For Personal Use) - [![Full Tutorial](https://img.shields.io/badge/Watch%20Now-blue)](https://www.youtube.com/watch?v=9wF7k9qA0Q4)
 
 - Tutorial to get Redis URL and password - [here.](./resources/extras/redistut.md)
 ---
@@ -54,11 +43,10 @@ Get the [Necessary Variables](#Necessary-Variables) and then click the button be
 `git clone https://github.com/TeamUltroid/Ultroid.git`
 - Go to the cloned folder: <br />
 `cd Ultroid`
-- Create a virtual env:   <br />
-`virtualenv -p /usr/bin/python3 venv`
-`. ./venv/bin/activate`
 - Install the requirements:   <br />
 `pip(3) install -U -r requirements.txt`
+- Install Extra requirements:   <br />
+`pip(3) install -r resources/extras/local-requirements.txt`
 - Generate your `SESSION`:
   - For Linux users:
     `bash sessiongen`
@@ -70,6 +58,11 @@ Get the [Necessary Variables](#Necessary-Variables) and then click the button be
     `cd desktop ; wget https://git.io/JY9JI -o ultroid.py ; python ultroid.py`
 - Fill your details in a `.env` file, as given in [`.env.sample`](https://github.com/TeamUltroid/Ultroid/blob/main/.env.sample).
 (You can either edit and rename the file or make a new file named `.env`.)
+  - For Linux users:
+    Do `touch .env` and
+    `nano .env` and fill the vars.
+- Before running Ultroid in Linux:
+  - Do screen -S Ultroid
 - Run the bot:
   - Linux Users:
    `bash resources/startup/startup.sh`
@@ -89,7 +82,7 @@ Different ways to get your `SESSION`:
 * Linux : `bash -c "$(curl -fsSL https://git.io/JY9JI)"`
 * PowerShell : `cd desktop ; wget https://git.io/JY9JI ; python ultroid.py`
 * Termux : `sh -c "$(curl -fsSL https://da.gd/termux-tel)"`
-* TelegramBot : [@SessionGeneratorBot](https://t.me/SessionGeneratorBot)
+* Telegram Bot : [@SessionGeneratorBot](https://t.me/SessionGeneratorBot)
 
 Made with 💕 by [@TeamUltroid](https://t.me/TeamUltroid). <br />
 
